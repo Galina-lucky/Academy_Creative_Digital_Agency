@@ -1,0 +1,42 @@
+$WHITE: #fff;
+
+$turquoise: #7beec7;
+//$grey: rgba(96, 96, 110, 0.502);
+
+$font-family-base: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$font-family-secondary: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+$line-height-base: 1.714285;
+$line-height-secondary: 2.142857;
+
+$base-font-size: 16px;
+$font-size-h1: 36px;
+$font-size-h2: 30px;
+$font-size-xlg: 24px;
+$font-size-lg: 18px;
+$font-size-md: 14px;
+$font-size-sm: 12px;
+
+$font-color-primary: #60606e;
+$font-color-secondary: #fff;
+$font-color-additional: $turquoise;
+$font-color-light: #999;
+$font-color-placeholder: #cdcdcd;
+
+$bg-color-primary: $WHITE;
+$bg-color-secondary: $turquoise;
+$bg-color-header: rgba(96, 96, 110, 0.502);
+$bg-color-dropdown-menu: #60606e;
+
+$outline-color: #585866;
+
+$screen-xlg-min: 1200px;
+$screen-lg-min: 992px;
+$screen-md-min: 768px;
+$screen-sm-min: 576px;
+$screen-xs-min: 320px;
+
+$screen-lg-max: $screen-xlg-min - 1px;
+$screen-md-max : $screen-lg-min - 1px;
+$screen-sm-max : $screen-md-min - 1px;
+$screen-xs-max : $screen-sm-min - 1px;
+
