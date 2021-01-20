@@ -29,14 +29,18 @@ $bg-color-dropdown-menu: #60606e;
 
 $outline-color: #585866;
 
-$screen-xlg-min: 1200px;
-$screen-lg-min: 992px;
-$screen-md-min: 768px;
-$screen-sm-min: 576px;
-$screen-xs-min: 320px;
+$screen-xs:                  480px;
+$screen-xs-min:              $screen-xs;
 
-$screen-lg-max: $screen-xlg-min - 1px;
-$screen-md-max : $screen-lg-min - 1px;
-$screen-sm-max : $screen-md-min - 1px;
-$screen-xs-max : $screen-sm-min - 1px;
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
 
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+
+$screen-xs-max:              ($screen-sm-min - 1); // до 767
+$screen-sm-max:              ($screen-md-min - 1); // до 991
+$screen-md-max:              ($screen-lg-min - 1); // до 1199

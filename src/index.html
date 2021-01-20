@@ -18,21 +18,21 @@
         <link href="/css/main.min.css" rel="stylesheet"/>
     </head>
     <body>
-        <header class="header">
+     <!--    <header class="header">
             <nav class="navbar">
                 <div class="container">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">
                             <img src="img/akad.png" alt="logo">
                         </a>
-                        <button class="navbar-toggle" type="button"  data-toggle="collapse" data-target=".navbar-collapse" >
+                        <button class="navbar-toggle btn-toggle-menu js-btn-toggle-menu" type="button"  data-toggle="collapse" data-target=".navbar-collapse" >
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
+                            <span class="icon-bar btn-toggle-menu__item js-btn-toggle-menu__item"></span>
+                            <span class="icon-bar btn-toggle-menu__item btn-toggle-menu__item--m js-btn-toggle-menu__item"></span>
+                            <span class="icon-bar btn-toggle-menu__item btn-toggle-menu__item--l js-btn-toggle-menu__item"></span>
                         </button>
                     </div>
-                    <div class="navbar-collapse collapse">
+                    <div class="navbar-collapse collapse js-menu">
                         <ul class="nav navbar-nav navbar-right text-uppercase menu-header">
                             <li class="menu-header__item">
                                 <a class="menu-header__link" href="#">Home</a>
@@ -73,7 +73,7 @@
                 <h1 class="page-title__text">our services</h1>
                 <p class="page-title__note">home / services</p>
             </div>      
-        </header>
+        </header> -->
 
         <main role="main">
             <section class="section">
@@ -91,14 +91,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-6 col-lg-6">
-                            <div class="row">
-                                <div class="info">
-                                    Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
-                                </div>
+                        <div class="col-md-6">
+                            <div class="info">
+                                Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
                             </div>
                             <div class="row">
-                                <div class="col-sm-6 col-lg-4">
+                                <div class="col-xs-6 col-sm-6 col-lg-4">
                                     <ul class="list">
                                         <li class="list__item">Stunning on all screens
                                             <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
@@ -117,7 +115,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-5 col-lg-offset-2">
+                                <div class="col-xs-6 col-lg-5 col-lg-offset-2">
                                     <ul class="list">
                                         <li class="list__item">Remarkable style
                                             <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
@@ -138,8 +136,8 @@
                                 </div>
                             </div>    
                         </div>
-                        <div class="col-lg-6">
-                            <img class="img-responsive" src="img/services_img.jpg" alt="Image">
+                        <div class="col-md-6">
+                            <img class="img-responsive img-remove" src="img/services_img.jpg" alt="Image">
                         </div>
                     </div>
                 </div>
@@ -153,17 +151,17 @@
                             <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                          <div class="list-features__item text-center">
-                            <img class="list-features__badge" src="img/1.png" alt="badge">
+                            <img class="list-features__badge" src="img/2.png" alt="badge">
                             <h3 class="list-features__title text-uppercase">Pass the limits</h3>
                             <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                          <div class="list-features__item text-center">
-                            <img class="list-features__badge" src="img/1.png" alt="badge">
+                            <img class="list-features__badge" src="img/3.png" alt="badge">
                             <h3 class="list-features__title text-uppercase">Create ideas</h3>
                             <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                          <div class="list-features__item text-center">
-                            <img class="list-features__badge" src="img/1.png" alt="badge">
+                            <img class="list-features__badge" src="img/4.png" alt="badge">
                             <h3 class="list-features__title text-uppercase">Awesome support</h3>
                             <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
@@ -173,7 +171,7 @@
             <section class="section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                             <div class="section-header text-center">
                                 <h2 class="section-header__title text-uppercase">
                                     pricing plans
@@ -208,7 +206,7 @@
                                     <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
                                 </li>
                             </ul>
-                            <button class="btn">
+                            <button class="btn hvr-rectangle-out">
                                 Get ctarted
                             </button>
                         </div>
@@ -235,7 +233,7 @@
                                     <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
                                 </li>
                             </ul>
-                            <button class="btn">
+                            <button class="btn hvr-rectangle-out">
                                 Get ctarted
                             </button>
                         </div>
@@ -262,7 +260,7 @@
                                     <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
                                 </li>
                             </ul>
-                            <button class="btn">
+                            <button class="btn hvr-rectangle-out">
                                 Get ctarted
                             </button>
                         </div>
@@ -273,10 +271,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <h2 class="section-feedback__title text-uppercase text-white">You think we're cool? Let's work together</h2>
-                            <button class="btn btn--secondary">
-                                Get in touch
-                            </button>
+                            <div class="section-header">
+                                <h2 class="section-header__title text-uppercase text-white">You think we're cool? Let's work together</h2>
+                                <button class="btn btn--secondary hvr-rectangle-out">
+                                    Get in touch
+                                </button>
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="feedback">
@@ -290,15 +290,15 @@
                                     <div class="form-group feedback__field">
                                         <input class="form-control form__field" type="email" name="email" placeholder="Your email">
                                     </div>
-                                    <button class="btn btn--primary" type="submit">send</button>
+                                    <button class="btn btn--primary hvr-rectangle-out" type="submit">send</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
         </main>
-        
+        <!--
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -328,7 +328,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
         <script src="/js/main.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->

@@ -18,6 +18,7 @@
 
 .info {
   margin-top: -10px;
+  margin-left: -15px;
   padding-bottom: 40px;
   font-size: $font-size-md;
   line-height: $line-height-secondary; 
@@ -63,5 +64,10 @@
   color: $font-color-secondary;
 }
 
+.img-remove {
 
+  @media (max-width: $screen-sm-max) {
+    display: none;
+  }
+}
 
