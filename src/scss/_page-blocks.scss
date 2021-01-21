@@ -10,7 +10,7 @@
   background-size: cover;
 
   @media (max-width: $screen-sm-max) {
-    padding-top: 15px;
+    padding-top: 10px;
   }
 }
 
@@ -30,7 +30,7 @@
     padding-right: 0px;
 
     &:not(:last-child) {
-      @media (max-width: $screen-sm-max) {
+      @media (max-width: $screen-xs-max) {
         border-bottom: 1px solid $bg-color-primary;
       }
     }
@@ -38,9 +38,11 @@
     &:hover,
     &:focus {
       & .dropdown-menu {
-        visibility: visible;
-        transform: scaleY(1);
-        opacity: 1;
+        @media (min-width: $screen-sm-min) {
+          visibility: visible;
+          transform: scaleY(1);
+          opacity: 1;
+        }
       }
     }
   }
@@ -65,6 +67,10 @@
       background-color: $font-color-primary;
       opacity: 0;
       transition: top 0.3s ease, opacity 0.3s ease;
+
+       @media (max-width: $screen-xs-max) {
+        display: none;
+      }
     }
 
     &:hover:before {
@@ -75,6 +81,12 @@
     &:hover, &:focus {
       background-color: transparent;
       color: $font-color-primary;
+
+      @media (max-width: $screen-xs-max) {
+        color: $font-color-secondary;
+        background-color: $bg-color-dropdown-menu-highlight;
+      }
+      
     }
 
     &:focus {
@@ -100,13 +112,13 @@
 
       &:hover {
         background-image: none;
-        background-color: #404051;
+        background-color: $bg-color-dropdown-menu-highlight;
         color: $font-color-secondary;
       }
 
       &:focus {
         background-image: none;
-        background-color: #404051;
+        background-color: $bg-color-dropdown-menu-highlight;
         color: $font-color-secondary;
         outline: 1px dotted $bg-color-primary;
       }
@@ -116,7 +128,7 @@
       background-color: #585866;
 
       &:hover, &:focus {
-        background-color: #404051;
+        background-color: $bg-color-dropdown-menu-highlight;
       }
     }
   }
@@ -307,16 +319,25 @@
   }
 
   &__link {
+    display: block;
     padding: 7px;
 
-    &:hover {
+    /*&:hover {
       #pinterest {
         fill: red;
       }
-    }
+    }*/
   }
 
   &__icon {
+    display: block;
+    width: 20px;
+    height: 20px;
 
+/*    &:hover {
+      path {
+        fill: red;
+      }
+    }*/
   }
 }
