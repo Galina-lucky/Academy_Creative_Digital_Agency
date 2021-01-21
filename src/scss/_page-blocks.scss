@@ -9,12 +9,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-/*  @media (max-width: ) {
-    background-image: none;
-  }*/
+  @media (max-width: $screen-sm-max) {
+    padding-top: 15px;
+  }
 }
 
-.menu-header {
+.main-menu {
   font-size: $font-size-sm;
   font-weight: 700;
 
@@ -32,6 +32,15 @@
     &:not(:last-child) {
       @media (max-width: $screen-sm-max) {
         border-bottom: 1px solid $bg-color-primary;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      & .dropdown-menu {
+        visibility: visible;
+        transform: scaleY(1);
+        opacity: 1;
       }
     }
   }
@@ -74,10 +83,15 @@
   }
 
   &__dropdown {
+    display: block;
     padding: 0;
     font-size: $font-size-sm;
     background-color: $bg-color-dropdown-menu;
     opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0.5);
+    transform-origin: 0 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 
     & > li > a {
       padding: 10px 20px;
@@ -109,6 +123,7 @@
 }
 
 .menu-footer {
+  margin-right: -20px;
   font-size: $font-size-md;
   font-weight: 400;
 
@@ -123,6 +138,10 @@
     padding-right: 20px;
     color: $font-color-light;
 
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+
     &:before {
       display: block;
       content:'';
@@ -131,7 +150,11 @@
       width: 0;
       top: 90%;
       background-color: $bg-color-secondary; 
-      transition: width 0.3s ease 
+      transition: width 0.3s ease;
+
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
     }
 
     &:hover, &:focus {
@@ -234,4 +257,66 @@
 .footer {
   padding-top: 45px;
   padding-bottom: 45px;
+
+  &__navbar {
+
+    @media (max-width: $screen-md-max) {
+      float: none;
+      display: flex;
+      justify-content: center
+    }
+
+    @media (max-width: $screen-xs-max) {
+      display: block;
+    }
+  }
+
+  /*&__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }*/
+
+  &__copyright {
+    margin-bottom: 25px;
+    padding-top: 15px;
+    text-align: right;
+    font-size: $font-size-md;
+    color: $font-color-light;
+
+    @media (max-width: $screen-md-max) {
+      text-align: center;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+  &__item {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    padding: 7px;
+
+    &:hover {
+      #pinterest {
+        fill: red;
+      }
+    }
+  }
+
+  &__icon {
+
+  }
 }
