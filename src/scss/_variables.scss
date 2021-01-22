@@ -17,7 +17,7 @@ $font-size-md: 14px;
 $font-size-sm: 12px;
 
 $font-color-primary: #60606e;
-$font-color-secondary: #fff;
+$font-color-secondary: $WHITE;
 $font-color-additional: $turquoise;
 $font-color-light: #999;
 $font-color-placeholder: #cdcdcd;
@@ -29,6 +29,18 @@ $bg-color-dropdown-menu: #60606e;
 $bg-color-dropdown-menu-highlight: #404051;
 
 $outline-color: #585866;
+
+//Social color
+$color-fb: #4867AA;
+$color-vk: #4C75A3;
+$color-tw: #00ABF0;
+$color-gp: #DC493C;
+$color-rss: #f26522;
+$color-in: #0077b5;
+$color-yt: #ff0000;
+$color-tg: #0088cc;
+$color-inst: #d6249f;
+$color-sf: #1DB954;
 
 $screen-xs:                  480px;
 $screen-xs-min:              $screen-xs;

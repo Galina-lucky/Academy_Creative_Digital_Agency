@@ -1,6 +1,18 @@
-/** {
+* {
   outline: 1px solid red;
-}*/
+}
+
+%color_line {
+  display: block;
+  content: "";
+  background-color: $bg-color-secondary;
+  position: absolute;
+  top: 22px;
+  left: 0;
+  z-index: -1;
+  width: 60px;
+  height: 20px;
+}
 
 .section {
   padding-bottom: 150px;
@@ -16,28 +28,62 @@
   @media (max-width: $screen-xs-max) {
     padding-bottom: 40px;
   }
-}
 
-.list-features {
-  display: flex;
-  justify-content: space-between;
+  &:first-child {
+    padding-top: 150px;
 
-  @media (max-width: $screen-sm-max) {
-    flex-wrap: wrap;
-  }
+    @media (max-width: $screen-md-max) {
+      padding-top: 100px;
+    }
 
-  &__item {
-    margin-bottom: 20px;
-    padding: 0 15px;
-    min-width: 235px;
-    
     @media (max-width: $screen-sm-max) {
-      max-width: 350px;
+      padding-top: 70px;
     }
 
     @media (max-width: $screen-xs-max) {
-      max-width: 300px;
-      flex-basis: 40%;
+      padding-top: 40px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 100px;
+
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 75px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: $font-size-h2;
+    line-height: 1.6;
+
+    &:before {
+      @extend %color_line;
+    }
+  }
+
+  &__description {
+    font-size: $font-size-md;
+  }
+}
+
+.list-features {
+
+  &__item {
+     
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 20px;
     }
   }
 
@@ -45,16 +91,28 @@
     width: 50px;
     height: 50px;
     margin-bottom: 30px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 15px;
+    }
   }
 
   &__title {
     margin-bottom: 20px;
     font-size: $font-size-lg;
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 10px;
+    }
   }
 
   &__lead {
     font-size: $font-size-md;
     line-height: $line-height-secondary;
+
+    @media (max-width: $screen-xs-max) {
+      line-height: $line-height-base;
+    }
   }
 }
 
@@ -63,17 +121,24 @@
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 2em;
 
+  @media (max-width: $screen-sm-max) {
+    grid-gap: 1em;
+  }
+
   &__item {
   }
 }
 
 .card {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px 30px 40px;
   border-top: 5px solid $bg-color-secondary;
 
   @media (max-width: $screen-xs-max) {
     width: max-content;
+    padding: 20px;
   }
   
   &:after {
@@ -91,7 +156,9 @@
   }
 
   &:hover {
-    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    @media (min-width: $screen-md-min) {
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    } 
   }
 
   &__title {
@@ -108,34 +175,26 @@
     font-size: $font-size-md;
     color: $font-color-secondary;
     background-color: $bg-color-secondary;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
     margin-left: 15px;
     margin-bottom: 45px;
+
+    @media (max-width: $screen-sm-max) {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      margin-bottom: 20px;
+    }
   }
 }
-
-
-.Shape_16_copy_2 {
-  background-color: rgb(123, 238, 199);
-  position: absolute;
-  left: 763px;
-  top: 1389px;
-  width: 50px;
-  height: 20px;
-  z-index: 39;
-}
-.Shape_4_copy {
-  background-color: rgb(123, 238, 199);
-  position: absolute;
-  left: 532px;
-  top: 1711px;
-  width: 68px;
-  height: 21px;
-  z-index: 50;
-}
-
-
-
-
