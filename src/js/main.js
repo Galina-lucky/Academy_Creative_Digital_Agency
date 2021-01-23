@@ -15,5 +15,17 @@
       };
     });
   });
-  
+
+
+  $(document).ready(function(){
+    let nav = $('.js-navbar');
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 35) {
+        nav.addClass("fixed-nav");
+      } else {
+        nav.removeClass("fixed-nav");
+      }
+    });
+  });  
 })();
