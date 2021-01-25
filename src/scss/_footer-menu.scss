@@ -1,0 +1,52 @@
+.menu-footer {
+  font-size: $font-size-md;
+  font-weight: 400;
+
+/*  @media (max-width: $screen-sm-max) {
+    margin-right: auto;
+    margin-left: auto;
+  }*/
+
+  & &__item {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 5px;
+  }
+  
+  & &__link {
+    position: relative;
+    color: $font-color-light;
+
+    @media (max-width: $screen-sm-max) {
+      text-align: center;
+    }
+
+    &:before {
+      display: block;
+      content:'';
+      position: absolute;
+      height: 1px;
+      width: 0;
+      top: 90%;
+      background-color: $bg-color-secondary; 
+      transition: width 0.3s ease;
+
+      @media (max-width: $screen-sm-max) {
+        display: none;
+      }
+    }
+
+    &:hover, &:focus {
+      background-color: transparent;
+    }
+
+    &:focus {
+      outline: 1px dotted $outline-color;
+    }
+
+    &:hover:before {
+      width: calc(50% - 20px);
+    }
+  }
+}

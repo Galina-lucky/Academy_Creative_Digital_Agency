@@ -16,16 +16,25 @@
     });
   });
 
-
   $(document).ready(function(){
     let nav = $('.js-navbar');
+    let navHeader = $('.js-navbar-header');
 
     $(window).scroll(function () {
       if ($(this).scrollTop() > 35) {
-        nav.addClass("fixed-nav");
+        nav.addClass('main-menu--fixed');
+        navHeader.addClass('main-menu--bg');
       } else {
-        nav.removeClass("fixed-nav");
+        nav.removeClass('main-menu--fixed');
+        navHeader.removeClass('main-menu--bg');
       }
     });
-  });  
+  }); 
+
+
+  AOS.init({
+     disable: 'mobile',
+     once: true
+  });
+ 
 })();

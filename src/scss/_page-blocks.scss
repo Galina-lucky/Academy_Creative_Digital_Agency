@@ -1,68 +1,13 @@
-.header {
-  padding-top: 35px;
-  width: 100%;
-  min-height: 500px;
-  font-family: $font-family-secondary;
-  background-color: $bg-color-header;
-  background-image: url(..\img\bg-header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (max-width: $screen-sm-max) {
-    padding-top: 10px;
-    min-height: 300px;
-  }
-}
-
-.section-feedback {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: $bg-color-secondary;
-}
-
-.feedback {
-  padding: 25px 30px;
-  background-color: $bg-color-primary;
-
-  &__title {
-    margin-bottom: 10px;
-    line-height: 1.5;
-    font-size: $font-size-xlg;
-  }
-
-  &__description {
-    color: $font-color-light;
-  }
-
-  &__form {
-  }
-
-  &__field {
-    flex-grow: 1;
-  }
-}
-
 .form {
-  display: flex;
-  justify-content: space-between;
-
-  @media (max-width: $screen-xs-max) {
-    display: block;
-  }
 
   & &__field {
-    width: 100%;
-    height: 100%;
     border-radius: 0;
 
-    @media (max-width: $screen-xs-max) {
-      height: 50px;
-    }
-
     &:hover {
-      @media (min-width: $screen-md-min) {
+      @media (min-width: $screen-sm-min) {
         border-color: transparent;
         outline: 2px dotted darken($bg-color-secondary, 40);
+        outline-offset: -2px;
         box-shadow: none;
       }
     }
@@ -70,54 +15,20 @@
     &:focus {
       border-color: transparent;
       outline: 2px dotted darken($bg-color-secondary, 40);
+      outline-offset: -2px;
       box-shadow: none;
     }
-  }
 
-  &__field::placeholder {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: $font-size-sm;
-    color: $font-color-placeholder;
-  }
-}
-
-.footer {
-  padding-top: 45px;
-  padding-bottom: 45px;
-
-  &__navbar {
-
-    @media (max-width: $screen-md-max) {
-      float: none;
-      display: flex;
-      justify-content: center
-    }
-
-    @media (max-width: $screen-xs-max) {
-      display: block;
+    &::placeholder {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: $font-size-sm;
+      color: $font-color-placeholder;
     }
   }
 
-  /*&__group {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }*/
-
-  &__copyright {
-    margin-bottom: 25px;
-    padding-top: 15px;
-    text-align: right;
+  & &__btn.btn--primary {
     font-size: $font-size-md;
-    color: $font-color-light;
-
-    @media (max-width: $screen-md-max) {
-      text-align: center;
-      padding-top: 0;
-      margin-bottom: 20px;
-    }
+    border-radius: 0;
   }
 }
-

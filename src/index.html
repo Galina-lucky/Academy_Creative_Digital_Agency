@@ -2,14 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Services</title>
         <meta content="IE=edge" http-equiv="X-UA-Compatible">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="" name="description"/>
         <meta content="" name="keywords"/>
+
         <link href="img/favicon.ico" rel="icon"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+
+        <title>Services</title>
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <!-- Optional theme -->
@@ -23,19 +26,17 @@
         <header class="header">
             <nav class="navbar js-navbar">
                 <div class="container">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">
+                    <div class="navbar-header js-navbar-header">
+                        <a class="navbar-brand logo" href="#">
                             <img src="img/akad.png" alt="logo">
                         </a>
                         <button class="navbar-toggle btn-toggle-menu js-btn-toggle-menu collapsed" type="button"  data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar btn-toggle-menu__item js-btn-toggle-menu__item"></span>
-                            <span class="icon-bar btn-toggle-menu__item btn-toggle-menu__item--m js-btn-toggle-menu__item"></span>
-                            <span class="icon-bar btn-toggle-menu__item btn-toggle-menu__item--l js-btn-toggle-menu__item"></span>
+                            <span class="btn-toggle-menu__item js-btn-toggle-menu__item">Toggle menu</span>
                         </button>
                     </div>
                     <div id="main_nav" class="navbar-collapse collapse js-menu">
-                        <ul class="nav navbar-nav navbar-right text-uppercase main-menu">
+                        <ul class="main-menu nav navbar-nav navbar-right text-uppercase">
                             <li class="main-menu__item">
                                 <a class="main-menu__link" href="#">Home</a>
                             </li>
@@ -45,7 +46,7 @@
                             <li class="active main-menu__item">
                                 <a class="main-menu__link" href="#">Services</a>
                             </li>
-                            <li class="dropdown main-menu__item">
+                            <li class="main-menu__item dropdown">
                                 <a class="dropdown-toggle main-menu__link" href="#"  data-toggle="dropdown">Portfolio</a>
                                 <ul class="dropdown-menu main-menu__dropdown">
                                     <li><a href="#">Portfolio list</a></li>
@@ -57,10 +58,10 @@
                                 <a class="dropdown-toggle main-menu__link" href="#"  data-toggle="dropdown">Blog</a>
                                 <ul class="dropdown-menu main-menu__dropdown">
                                     <li>
-                                        <a class="menu__dropdownLink" href="#">Posts list</a>
+                                        <a href="#">Posts list</a>
                                     </li>
                                     <li>
-                                        <a class="menu__dropdownLink" href="#">Single post 1</a>
+                                        <a href="#">Single post 1</a>
                                     </li>
                                 </ul>
                             </li>
@@ -72,120 +73,101 @@
                 </div>
             </nav>
             
-            <div class="page-title text-center text-uppercase">
-                <h1 class="page-title__text">our services</h1>
-                <p class="page-title__note">home / services</p>
+            <div class="header__info text-center text-uppercase">
+                <h1 class="header__title">Our services</h1>
+                <p class="header__breadcrumbs">Home / services</p>
             </div>      
         </header>
 
-        <main role="main">
-            <section class="section" data-aos="fade-up">
-                <div class="container">
+        <main>
+            <section class="section section-what-we-do" data-aos="fade-up">
+                <div class="container"> 
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                             <div class="section__header text-center">
                                 <h2 class="section__title text-uppercase">
                                     What we do
                                 </h2>
-                                <p class="section__description">
+                                <p class="section__lead">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="info">
-                                Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-lg-4">
-                                    <ul class="list">
-                                        <li class="list__item">Stunning on all screens
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Easy to customize
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Make a difference
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Imagine and create
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item ">Unlimited possibilities
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-xs-6 col-lg-5 col-lg-offset-2">
-                                    <ul class="list">
-                                        <li class="list__item">Remarkable style
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Captivating presentations
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Make your portfolio pop
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Words that matter
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                        <li class="list__item">Satisfied clients
-                                            <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>    
-                        </div>
-                        <div class="col-md-6">
-                            <img class="img-responsive img-remove" src="img/services_img.jpg" alt="Image">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section" data-aos="fade-up">
-                <div class="container">
-                    <div class="list-features">
+                    </div> <!-- / .row -->
+
+                    <div class="section__info">
                         <div class="row">
-                            <div class="col-sm-6 col-md-3">
-                                <div class="list-features__item text-center">
-                                    <img class="list-features__badge" src="img/1.png" alt="badge">
-                                    <h3 class="list-features__title text-uppercase">Keep pulse going</h3>
-                                    <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-                                </div>
+                            <div class="col-md-6 col-md-push-6">
+                                <img class="section-what-we-do__img img-responsive hidden-xs" src="/img/services_img.jpg" alt="What we do">
                             </div>
 
+                            <div class="col-md-6 col-md-pull-6">
+                                <div class="section__description">
+                                    Erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan.
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <ul class="list">
+                                            <li class="list__item">Stunning on all screens</li>
+                                            <li class="list__item">Easy to customize</li>
+                                            <li class="list__item">Make a difference</li>
+                                            <li class="list__item">Imagine and create</li>
+                                            <li class="list__item ">Unlimited possibilities</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <ul class="list">
+                                            <li class="list__item">Remarkable style</li>
+                                            <li class="list__item">Captivating presentations</li>
+                                            <li class="list__item">Make your portfolio pop</li>
+                                            <li class="list__item">Words that matter</li>
+                                            <li class="list__item">Satisfied clients</li>
+                                        </ul>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div> <!-- / .row -->
+                    </div>
+                    <div class="features">
+                        <div class="row">
                             <div class="col-sm-6 col-md-3">
-                                <div class="list-features__item text-center">
-                                    <img class="list-features__badge" src="img/2.png" alt="badge">
-                                    <h3 class="list-features__title text-uppercase">Pass the limits</h3>
-                                    <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                <div class="features__item text-center">
+                                    <img class="features__icon" src="img/1.png" alt="icon">
+                                    <h3 class="features__title text-uppercase">Keep pulse going</h3>
+                                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                </div>
+                            </div> 
+
+                            <div class="col-sm-6 col-md-3">
+                                <div class="features__item text-center">
+                                    <img class="features__icon" src="img/2.png" alt="icon">
+                                    <h3 class="features__title text-uppercase">Pass the limits</h3>
+                                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                                 </div>
                             </div>
 
                             <div class="clearfix visible-sm-block"></div>
 
                             <div class="col-sm-6 col-md-3">
-                                <div class="list-features__item text-center">
-                                    <img class="list-features__badge" src="img/3.png" alt="badge">
-                                    <h3 class="list-features__title text-uppercase">Create ideas</h3>
-                                    <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                <div class="features__item text-center">
+                                    <img class="features__icon" src="img/3.png" alt="icon">
+                                    <h3 class="features__title text-uppercase">Create ideas</h3>
+                                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                                 </div>
                             </div>
 
                             <div class="col-sm-6 col-md-3">
-                                <div class="list-features__item text-center">
-                                    <img class="list-features__badge" src="img/4.png" alt="badge">
-                                    <h3 class="list-features__title text-uppercase">Awesome support</h3>
-                                    <p class="list-features__lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                <div class="features__item text-center">
+                                    <img class="features__icon" src="img/4.png" alt="icon">
+                                    <h3 class="features__title text-uppercase">Awesome support</h3>
+                                    <p class="section__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> <!-- / .row -->
                     </div>
                 </div>
             </section>
+
             <section class="section" data-aos="fade-up">
                 <div class="container">
                     <div class="row">
@@ -194,98 +176,69 @@
                                 <h2 class="section__title text-uppercase">
                                     Pricing plans
                                 </h2>
-                                <p class="section__description">
+                                <p class="section__lead">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                    <div class="list-prices">
-                        <div class="list-prices__item card">
-                            <h3 class="card__title text-uppercase">Basic</h3>
-                            <p class="card__cost text-uppercase text-centr">$35.99 Monthly</p>
-                            <ul class="list card__list">
-                                <li class="list__item">Lorem ipsum dolor sit amet
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Consectetuer adipiscing elit
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Sed diam nonummy
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Nibh euismod tincidunt
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Ut laoreet dolore
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Magna aliquam erat volutpat
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                            </ul>
-                            <button class="btn hvr-rectangle-out">
-                                Get ctarted
-                            </button>
+                    </div> <!-- / .row -->
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="tariff-plan">
+                                <h3 class="tariff-plan__title text-uppercase">Basic</h3>
+                                <p class="tariff-plan__price text-uppercase text-centr">$35.99 Monthly</p>
+                                <ul class="list tariff-plan__list">
+                                    <li class="list__item">Lorem ipsum dolor sit am</li>
+                                    <li class="list__item">Consectetuer adipiscing elit</li>
+                                    <li class="list__item">Sed diam nonummy</li>
+                                    <li class="list__item">Nibh euismod tincidunt</li>
+                                    <li class="list__item">Ut laoreet dolore</li>
+                                    <li class="list__item">Magna aliquam erat volutpat</li>
+                                </ul>
+                                <button class="btn hvr-rectangle-out">
+                                    Get ctarted
+                                </button>
+                            </div>
                         </div>
-                        <div class="list-prices__item card">
-                            <h3 class="card__title text-uppercase">Advanced</h3>
-                            <p class="card__cost text-uppercase text-centr">$55.99 Monthly</p>
-                            <ul class="list card__list">
-                                <li class="list__item">Lorem ipsum dolor sit amet
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Consectetuer adipiscing elit
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Sed diam nonummy
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Nibh euismod tincidunt
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Ut laoreet dolore
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Magna aliquam erat volutpat
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                            </ul>
-                            <button class="btn hvr-rectangle-out">
-                                Get ctarted
-                            </button>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="tariff-plan">
+                                <h3 class="tariff-plan__title text-uppercase">Advanced</h3>
+                                <p class="tariff-plan__price text-uppercase text-centr">$55.99 Monthly</p>
+                                <ul class="list tariff-plan__list">
+                                    <li class="list__item">Lorem ipsum dolor sit amet</li>
+                                    <li class="list__item">Consectetuer adipiscing elit</li>
+                                    <li class="list__item">Sed diam nonummy</li>
+                                    <li class="list__item">Nibh euismod tincidunt</li>
+                                    <li class="list__item">Ut laoreet dolore</li>
+                                    <li class="list__item">Magna aliquam erat volutpat</li>
+                                </ul>
+                                <button class="btn hvr-rectangle-out">
+                                    Get ctarted
+                                </button>
+                            </div>
                         </div>
-                        <div class="list-prices__item card">
-                            <h3 class="card__title text-uppercase">Smart</h3>
-                            <p class="card__cost text-uppercase text-centr">$75.99 Monthly</p>
-                            <ul class="list card__list">
-                                <li class="list__item">Lorem ipsum dolor sit amet
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Consectetuer adipiscing elit
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Sed diam nonummy
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Nibh euismod tincidunt
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Ut laoreet dolore
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                                <li class="list__item">Magna aliquam erat volutpat
-                                    <span class="glyphicon glyphicon-ok list__icon text-center" aria-hidden="true"></span>
-                                </li>
-                            </ul>
-                            <button class="btn hvr-rectangle-out">
-                                Get ctarted
-                            </button>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="tariff-plan">
+                                <h3 class="tariff-plan__title text-uppercase">Smart</h3>
+                                <p class="tariff-plan__price text-uppercase text-centr">$75.99 Monthly</p>
+                                <ul class="list tariff-plan__list">
+                                    <li class="list__item">Lorem ipsum dolor sit amet</li>
+                                    <li class="list__item">Consectetuer adipiscing elit</li>
+                                    <li class="list__item">Sed diam nonummy</li>
+                                    <li class="list__item">Nibh euismod tincidunt</li>
+                                    <li class="list__item">Ut laoreet dolore</li>
+                                    <li class="list__item">Magna aliquam erat volutpat</li>
+                                </ul>
+                                <button class="btn hvr-rectangle-out">
+                                    Get ctarted
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </div> <!-- / .row -->
                 </div>
             </section>
-            <section class="section-feedback" data-aos="fade-up">
+            <section class="section-subscription" data-aos="fade-up">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -297,18 +250,21 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="feedback">
-                                <h3 class="feedback__title text-uppercase">
+                            <div class="subscription">
+                                <h3 class="subscription__title text-uppercase">
                                     Stay informed with our newsletter
                                 </h3>
-                                <p class="feedback__description">
+                                <p class="subscription__description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <form class="feedback__form form-inline form" action="">
-                                    <div class="form-group feedback__field">
-                                        <input class="form-control form__field" type="email" name="email" value required placeholder="Your email">
+
+                                <form class="form" action="">
+                                    <div class="input-group input-group-lg">
+                                        <input class="form__field form-control" type="email" name="email" value='' required placeholder="Your email">
+                                        <div class="input-group-btn">
+                                            <button class="form__btn btn btn--primary hvr-rectangle-out" type="submit">send</button>
+                                        </div>
                                     </div>
-                                    <button class="btn btn--primary hvr-rectangle-out" type="submit">send</button>
                                 </form>
                             </div>
                         </div>
@@ -319,45 +275,17 @@
         
         <footer class="footer">
             <div class="container">
-                <!-- <div class="footer__group">
-                    <div class="navbar footer__navbar">
-                        <ul class="nav navbar-nav text-uppercase menu-footer">
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Home</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">About us</a>
-                            </li>
-                            <li class="active menu-footer__item">
-                                <a class="menu-footer__link" href="#">Services</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Portfolio</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Blog</a>
-                            </li>
-                            <li class="menu-footer__item">
-                                <a class="menu-footer__link" href="#">Contact us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="footer__copyright text-uppercase">
-                        Created by akhouad 2016. All Rights Reserved
-                    </p>
-                </div>
- -->
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div class="navbar footer__navbar">
-                            <ul class="nav navbar-nav text-uppercase menu-footer">
+                    <div class="col-md-8">
+                        <div class="footer__navbar navbar">
+                            <ul class="menu-footer nav navbar-nav text-uppercase">
                                 <li class="menu-footer__item">
                                     <a class="menu-footer__link" href="#">Home</a>
                                 </li>
                                 <li class="menu-footer__item">
                                     <a class="menu-footer__link" href="#">About us</a>
                                 </li>
-                                <li class="active menu-footer__item">
+                                <li class="menu-footer__item">
                                     <a class="menu-footer__link" href="#">Services</a>
                                 </li>
                                 <li class="menu-footer__item">
@@ -372,61 +300,59 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <p class="footer__copyright text-uppercase">
-                            Created by akhouad 2016. All Rights Reserved
-                        </p>
-                        <ul class="social-list">
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="https://uk-ua.facebook.com/" title="Поделиться в Facebook">
-                                    <svg class="social-list__icon social-list__icon--fb">
-                                        <use xlink:href="/img/sprite.svg#fb"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="https://twitter.com/explore" title="Поделиться в Twitter">
-                                    <svg class="social-list__icon social-list__icon--tw">
-                                        <use xlink:href="/img/sprite.svg#twitter" ></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="https://www.youtube.com/?gl=UA&hl=ru" class="social-list__link" title="Youtube">
-                                    <svg class="social-list__icon social-list__icon--yt">
-                                        <use xlink:href="/img/sprite.svg#youtube"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="https://www.linkedin.com" class="social-list__link" title="Поделиться в Linkedin">
-                                    <svg class="social-list__icon social-list__icon--in">
-                                        <use xlink:href="/img/sprite.svg#linkedin"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a class="social-list__link" href="https://www.pinterest.com/"  title="Pinterest">
-                                    <svg class="social-list__icon social-list__icon--pi">
-                                        <use xlink:href="/img/sprite.svg#pinterest"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="social-list__item">
-                                <a href="https://www.instagram.com/?hl=ru" class="social-list__link" title="Поделиться в Instagram">
-                                    <svg class="social-list__icon social-list__icon--inst">
-                                        <use xlink:href="/img/sprite.svg#instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- div class="row">
-                    <div class="col-md-4 col-md-offset-8">
+                    <div class="col-md-4">
+                        <div class="wrap-flex">
+                            <ul class="footer__social-list social-list">
+                                <li class="social-list__item">
+                                    <a class="social-list__link" href="https://uk-ua.facebook.com/" title="Поделиться в Facebook">
+                                        <svg class="social-list__icon social-list__icon--fb">
+                                            <use xlink:href="/img/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__link" href="https://twitter.com/explore" title="Поделиться в Twitter">
+                                        <svg class="social-list__icon social-list__icon--tw">
+                                            <use xlink:href="/img/sprite.svg#twitter" ></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.youtube.com/?gl=UA&hl=ru" class="social-list__link" title="Youtube">
+                                        <svg class="social-list__icon social-list__icon--yt">
+                                            <use xlink:href="/img/sprite.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.linkedin.com" class="social-list__link" title="Поделиться в Linkedin">
+                                        <svg class="social-list__icon social-list__icon--in">
+                                            <use xlink:href="/img/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a class="social-list__link" href="https://www.pinterest.com/"  title="Pinterest">
+                                        <svg class="social-list__icon social-list__icon--pi">
+                                            <use xlink:href="/img/sprite.svg#pinterest"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social-list__item">
+                                    <a href="https://www.instagram.com/?hl=ru" class="social-list__link" title="Поделиться в Instagram">
+                                        <svg class="social-list__icon social-list__icon--inst">
+                                            <use xlink:href="/img/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="footer__copyright text-uppercase">
+                                Created by akhouad 2016. All Rights Reserved
+                            </p>
+                        </div>
                         
                     </div>
-                </div> -->
+                </div>
             </div>
         </footer> 
    
@@ -435,12 +361,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
         <!-- Animation -->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-               disable: 'mobile',
-               once: true
-            });
-        </script>
 
         <script src="/js/main.min.js"></script>
     </body>

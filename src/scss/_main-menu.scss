@@ -80,10 +80,6 @@
 
     &:focus {
       outline: 1px dotted $outline-color;
-
-      /*@media (max-width: $screen-xs-max) {
-        background-color: $bg-color-dropdown-menu-highlight;
-      }*/ 
     }
   }
 
@@ -104,7 +100,7 @@
     & > li {
 
       @media (max-width: $screen-xs-max) {
-        border-bottom: 1px dotted #fff;
+        border-bottom: 1px dotted $bg-color-primary;
       }
 
       &:last-child {
@@ -155,157 +151,46 @@
       border-color: $bg-color-primary;
     }
   }
-}
 
-.menu-footer {
-  margin-right: -20px;
-  font-size: $font-size-md;
-  font-weight: 400;
-
-  & &__item {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  
-  & &__link {
-    position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: $font-color-light;
-
-    @media (max-width: $screen-sm-max) {
-      text-align: center;
-    }
-
-    &:before {
-      display: block;
-      content:'';
-      position: absolute;
-      height: 1px;
-      width: 0;
-      top: 90%;
-      background-color: $bg-color-secondary; 
-      transition: width 0.3s ease;
-
-      @media (max-width: $screen-sm-max) {
-        display: none;
-      }
-    }
-
-    &:hover, &:focus {
-      background-color: transparent;
-    }
-
-    &:focus {
-      outline: 1px dotted $outline-color;
-    }
-
-    &:hover:before {
-      width: calc(50% - 20px);
-    }
-  }
-}
-
-.fixed-nav {
-  z-index: 9999; 
-  position: fixed; 
-  left: 0; 
-  top: 0; 
-  width: 100%;
-  background-color: $bg-color-fixed-menu;
-}
-
-/*.main-menu {
-  font-size: $font-size-sm;
-  font-weight: 700;
-
-  & &__item {
-    padding-left: 0px;
-    padding-right: 0px;
-
-    &:hover,
-    &:focus {
-      & .dropdown-menu {
-        @media (min-width: $screen-sm-min) {
-          visibility: visible;
-          transform: scaleY(1);
-          opacity: 1;
-        }
-      }
-    }
-  }
-
-  & &__link {
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    &:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 20px;
-      width: calc(50% - 10px);
-      height: 1px;
-      background-color: $font-color-primary;
-      opacity: 0;
-      transition: top 0.3s ease, opacity 0.3s ease;
-    }
-
-    &:hover:before {
-      top: 10px;
-      opacity: 1;
-    }
-
-    &:hover, &:focus {
-      background-color: transparent;
-      color: $font-color-primary;      
-    }
-
-    &:focus {
-      outline: 1px dotted $outline-color;
-    }
-  }
-
-  &__dropdown {
-    padding: 0;
-    font-size: $font-size-sm;
-    background-color: $bg-color-dropdown-menu;
-
+  &--fixed {
+    z-index: 9999; 
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    width: 100%;
     @media (min-width: $screen-sm-min) {
-      display: block;
-      opacity: 0;
-      visibility: hidden;
-      transform: scaleY(0.5);
-      transform-origin: 0 0;
-      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-    }
-    
-    & > li > a {
-      padding: 10px 20px;
-      font-weight: 700;
-      color: $font-color-secondary;
-
-      &:hover {
-        background-image: none;
-        background-color: $bg-color-dropdown-menu-highlight;
-        color: $font-color-secondary;
-      }
-
-      &:focus {
-        background-image: none;
-        background-color: $bg-color-dropdown-menu-highlight;
-        color: $font-color-secondary;
-        outline: 1px dotted $bg-color-primary;
-      }
-    }
-
-    li:nth-child(2n) a {
-      background-color: #585866;
-
-      &:hover, &:focus {
-        background-color: $bg-color-dropdown-menu-highlight;
-      }
+      background-color: $bg-color-fixed-menu;
     }
   }
-}*/
+
+  &--bg {
+    @media (max-width: $screen-xs-max) {
+      background-color: $bg-color-fixed-menu;
+    }
+  }
+}
+
+.logo {
+  padding-top: 17px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+#main_nav {
+  border: none;
+}
+
+.navbar {
+  margin-bottom: 190px;
+  border-radius: 0;
+
+  @media (max-width: $screen-sm-max) {
+    margin-bottom: 130px;
+  }
+
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 50px;
+  }
+}
