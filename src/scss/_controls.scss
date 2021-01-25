@@ -23,8 +23,29 @@ a {
   color: $font-color-primary;
 }
 
-.hvr-rectangle-out {
-  @media (min-width: $screen-md-min) {
+.btn {
+  position: relative;
+	display: inline-block;
+  min-width: 100%;
+  padding: 20px;
+  font-size: $font-size-md;
+  font-weight: 400; 
+  line-height: 1;
+  color: $font-color-secondary;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  background-color: $bg-color-secondary;
+  border: none;
+  border-radius: 0;
+  outline: none;
+
+  @media (min-width: $screen-sm-min) {
+    min-width: 135px;
     transform: perspective(1px) translateZ(0);
     position: relative;
 
@@ -53,34 +74,9 @@ a {
       transform: scale(1);
     }
   } 
-}
 
-.btn {
-  position: relative;
-	display: inline-block;
-  min-width: 100%;
-  padding: 20px;
-  font-size: $font-size-md;
-  font-weight: 400; 
-  line-height: 1;
-  color: $font-color-secondary;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  background-color: $bg-color-secondary;
-  border: none;
-  border-radius: 0;
-  outline: none;
 
-  @media (min-width: $screen-sm-min) {
-    min-width: 135px;
-  }
-
-  &:focus {
+  /*&:focus {
     outline: 1px dotted darken($bg-color-secondary, 40);
 
     @media (max-width: $screen-sm-max) {
@@ -94,7 +90,7 @@ a {
 
   &:active {
     background: darken($bg-color-secondary, 30);
-  }
+  }*/
 
   &--primary {
     font-weight: bold;
@@ -113,7 +109,7 @@ a {
       min-width: 165px;
     }
 
-    &:focus {
+    /*&:focus {
       @media (max-width: $screen-sm-max) {
         color: $font-color-additional;
       }
@@ -123,7 +119,7 @@ a {
       @media (max-width: $screen-sm-max) {
         color: $font-color-secondary;
       }
-    }
+    }*/
   }
 }
 

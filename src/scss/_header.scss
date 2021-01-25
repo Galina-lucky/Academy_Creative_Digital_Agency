@@ -1,6 +1,6 @@
 .header {
-  padding-top: 35px;
-  padding-bottom: 120px;
+  padding-top: 250px;
+  padding-bottom: 160px;
   font-family: $font-family-secondary;
   background-color: $bg-color-header;
   background-image: url(..\img\bg-header.jpg);
@@ -8,21 +8,12 @@
   background-size: cover;
 
   @media (max-width: $screen-sm-max) {
-    padding-top: 10px;
+    padding-top: 50px;
     padding-bottom: 80px;
   }
 
   @media (max-width: $screen-xs-max) {
     padding-bottom: 40px;
-  }
-
-  &__info {
-    margin-top: 190px;
-    padding-bottom: 20px;
-
-    @media (max-width: $screen-sm-max) {
-      margin-top: 40px;
-    }
   }
 
   &__title {
