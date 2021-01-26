@@ -44,58 +44,86 @@ a {
   border-radius: 0;
   outline: none;
 
+/*  &:hover, 
+  &:focus, 
+  &:active,
+  &:active:focus {
+    color: white;
+    box-shadow: none;
+    outline: none;
+  }*/
+/*  @media (max-width: $screen-xs-max) {
+    &:hover, 
+    &:focus, 
+    &:active,
+    &:active:focus {
+      color: white;
+      box-shadow: none;
+      outline: none;
+    }
+  }*/
+
   @media (min-width: $screen-sm-min) {
     min-width: 135px;
-    transform: perspective(1px) translateZ(0);
-    position: relative;
+  }
 
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: darken($bg-color-secondary, 25);
-      transform: scale(0);
-      transition-property: transform;
-      transition-duration: 0.3s;
-      transition-timing-function: ease-out;
-    }
+  &--primary {
 
     &:hover, 
     &:focus, 
-    &:active {
+    &:active,
+    &:active:focus {
       color: white;
+      box-shadow: none;
+      outline: none;
     }
 
-    &:hover:before, &:focus:before {
-      transform: scale(1);
+    @media (min-width: $screen-sm-min) {
+      min-width: 135px;
+      transform: perspective(1px) translateZ(0);
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: darken($bg-color-secondary, 25);
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+      }
+
+      &:hover, 
+      &:focus, 
+      &:active {
+        color: white;
+      }
+
+      &:hover:before, &:focus:before {
+        transform: scale(1);
+      }
+
+      &:active:before {
+        background: darken($bg-color-secondary, 35)
+      };
     }
-  } 
 
+    @media (max-width: $screen-xs-max) {
+      &:focus {
+        background: darken($bg-color-secondary, 30);
+      }
 
-  /*&:focus {
-    outline: 1px dotted darken($bg-color-secondary, 40);
-
-    @media (max-width: $screen-sm-max) {
-      color: $font-color-secondary;
+      &:active,
+      &:active:focus {
+        background: darken($bg-color-secondary, 40)
+      }
     }
   }
-
-  &:active, &:active:focus {
-    outline: 2px dotted darken($bg-color-secondary, 60);
-  }
-
-  &:active {
-    background: darken($bg-color-secondary, 30);
-  }*/
-
-  &--primary {
-    font-weight: bold;
-  }
-
 
   &--secondary {
     padding-right: 30px;
@@ -105,21 +133,68 @@ a {
     background-color: $bg-color-primary;
     color: $font-color-additional;
 
+    &:hover,
+    &:focus, 
+    &:active,
+    &:active:focus {
+      color: $font-color-additional;
+      box-shadow: none;
+      outline: none;
+    }
+
     @media (min-width: $screen-sm-min) {
       min-width: 165px;
-    }
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
 
-    /*&:focus {
-      @media (max-width: $screen-sm-max) {
+      &:before {
+        content: '';
+        position: absolute;
+        border: $bg-color-primary solid 4px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition-duration: 0.3s;
+        transition-property: top, right, bottom, left;
+      }
+
+      &:hover, 
+      &:focus, 
+      &:active {
+        color: darken($font-color-additional, 30);
+      }
+
+      &:hover:before,
+      &:focus:before,
+      &:active:before {
+        top: -8px;
+        right: -8px;
+        bottom: -8px;
+        left: -8px;
+      }
+
+      &:active:before {
         color: $font-color-additional;
+        border-color: darken($bg-color-secondary, 25);
+      }      
+    }
+    
+    @media (max-width: $screen-xs-max) {
+      &:focus {
+        color: darken($font-color-additional, 30);
+        outline: 2px dotted darken($bg-color-secondary, 35);
+        outline-offset: -4px;
+      }
+
+      &:active,
+      &:active:focus {
+        color: darken($font-color-additional, 40);
+        outline: 2px dotted darken($bg-color-secondary, 45);
+        outline-offset: -2px;
       }
     }
-
-    &:active {
-      @media (max-width: $screen-sm-max) {
-        color: $font-color-secondary;
-      }
-    }*/
   }
 }
 
@@ -169,5 +244,9 @@ a {
         width: 100%;
       }
     }
+  }
+
+  &:focus {
+    outline: 1px dotted $outline-color;
   }
 }

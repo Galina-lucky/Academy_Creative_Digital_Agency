@@ -3,6 +3,7 @@
   top: 0;
   margin-bottom: 0;
   width: 100%;
+  border: none;
   transform: translateY(10px);
   z-index: 9999;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -22,6 +23,10 @@
         background-color: $bg-color-fixed-menu;
       }
     }
+  }
+
+  &__menu {
+    border: 0;
   }
 }
 
@@ -190,6 +195,6 @@
   padding-top: 17px;
 
   &:focus {
-    outline: none;
+    outline: 1px dotted $outline-color;
   }
 }
